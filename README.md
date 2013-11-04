@@ -1,4 +1,4 @@
-chouchou
-========
+fuel
+====
 
-A query-rich backend service to power front-end applications
+A backend platform/service allowing rapid developing of front-end apps

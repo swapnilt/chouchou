@@ -1,0 +1,101 @@
+{
+	"type": "Collection",
+	"properties": {
+		"contenttype": {
+			"name": "contenttype",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "contenttype",
+			"order": 0
+		},
+		"entitytype": {
+			"name": "entitytype",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "entitytype",
+			"order": 1
+		},
+		"entityid": {
+			"name": "entityid",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "entityid",
+			"order": 2
+		},
+		"parentid": {
+			"name": "parentid",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "parentid",
+			"order": 3
+		},
+		"source": {
+			"name": "source",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "source",
+			"order": 4
+		},
+		"ownerid": {
+			"name": "ownerid",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "ownerid",
+			"order": 5
+		},
+		"ownername": {
+			"name": "ownername",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "ownername",
+			"order": 6
+		},
+		"content": {
+			"name": "content",
+			"type": "object",
+			"typeLabel": "object",
+			"required": true,
+			"id": "content",
+			"order": 7
+		},
+		"location": {
+			"name": "location",
+			"type": "object",
+			"typeLabel": "object",
+			"required": false,
+			"id": "location",
+			"order": 8
+		},
+		"timestamp": {
+			"name": "timestamp",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "timestamp",
+			"order": 9
+		},
+		"positives": {
+			"name": "positives",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "positives",
+			"order": 10
+		},
+		"negatives": {
+			"name": "negatives",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "negatives",
+			"order": 11
+		}
+	}
+}
