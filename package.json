@@ -1,10 +1,10 @@
 {
   "author": "Rithish Saralaya",
-  "name": "fuel",
+  "name": "chouchou",
   "version": "0.1",
   "description": "A backend platform to fuel app development",
   "repository": {
-    "url": "git://github.com/goibibo/fuel.git"
+    "url": "git://github.com/goibibo/chouchou.git"
   },
   "engines": {
     "node": ">= 0.8.0"
