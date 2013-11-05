@@ -17,6 +17,61 @@ A backend platform/service allowing rapid developing of front-end apps.
 	npm install
 	npm link
 
+## Run
+
+Update config.js with your settings.
+```
+    __CONFIG__ = {
+		    "production": {
+		        "port": 5000,
+		        "env": "production",
+		        "db": {
+		            "host": "a.b.c.d",
+		            "port": 27017,
+		            "name": "fuel_db"
+		        }
+		    }
+		    ,"pre-production": {
+		        "port": 5000,
+		        "env": "pre-production",
+		        "db": {
+		            "host": "localhost",
+		            "port": 27017,
+		            "name": "fuel_db"
+		        }
+		    }
+		    ,"development": {
+		        "port": 5001,
+		        "env": "development",
+		        "db": {
+		            "host": "localhost",
+		            "port": 27017,
+		            "name": "ugc_deployd"
+		        }
+		    }		    
+		};
+```
+Update system environment in chouchou.js
+
+For development
+```
+var server = new Server(config.__CONFIG__.development);
+```
+For production
+```
+var server = new Server(config.__CONFIG__.production);
+```
+ 
+Execute in PRODUCTION mode
+```
+node chouchou
+```
+
+Execute in DEBUG mode
+```
+DEBUG=* node chouchou 
+```
+
 ## License
 
     Licensed under the Apache License, Version 2.0 (the "License");
