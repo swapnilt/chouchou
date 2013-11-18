@@ -4,7 +4,7 @@ var Server = require('./lib/server')
   , debug = require('debug')('fuel')
   , config = require('./config');
 
-var server = new Server(config.__CONFIG__.development);
+var server = new Server(config.__CONFIG__[config.__ENVIRONMENT__]);
 
 upgrade(server);
 
